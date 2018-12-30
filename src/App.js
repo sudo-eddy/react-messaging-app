@@ -1,28 +1,23 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import MessageList from './messages/message-list';
+
 
 class App extends Component {
-  render() {
+  render(){
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
+      <MessageList />
+    )
   }
 }
 
+
 export default App;
+
+//Things I learned
+//import react Component first
+//import external css if any
+//then extend component with new class App
+//then render() the JSX block (styles too)
+//return() as content in the view (must be enclosed)
+//finally export as default App class and import it in index.js
